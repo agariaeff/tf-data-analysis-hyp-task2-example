@@ -10,4 +10,4 @@ def solution(x: np.array, y: np.array) -> bool:
     # Не меняйте название функции и её аргументы
     from scipy.stats import anderson_ksamp
     pval = anderson_ksamp([x, y]).pvalue
-    return pval < 0.07 # Ваш ответ, True или False
+    return pval < 0.02 # Ваш ответ, True или False
